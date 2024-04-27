@@ -15,3 +15,4 @@ public class SimpleArraySum {
         System.out.println(sum);
     }
 }
+ 
