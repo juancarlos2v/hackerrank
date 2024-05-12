@@ -19,7 +19,7 @@ public class JavaBigDecimal {
         }
         System.out.println(entry);
 
-       Collections.sort(entry,(e1,e2)->e2.getValue().compareTo(e1.getValue()));
+       entry.sort((e1, e2) -> e2.getValue().compareTo(e1.getValue()));
 
         for (Map.Entry<String, BigDecimal> key:entry
              ) {
