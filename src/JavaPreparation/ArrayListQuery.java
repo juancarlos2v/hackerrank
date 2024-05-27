@@ -1,7 +1,6 @@
 package JavaPreparation;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,7 +13,6 @@ public class ArrayListQuery {
         scan.nextLine();
         for (int i = 0; i <n ; i++) {
             List<Integer> row=new ArrayList<>();
-            Scanner lineScanner = new Scanner(scan.nextLine());
             int size = scan.nextInt();
             // Capturar el primer número antes de ingresar al bucle para los demás números
             row.add(size);

@@ -19,8 +19,7 @@ public class InstanceOFTutorial {
             if (element.getClass().equals(Hacker.class))
                 c++;
         }
-        String ret = Integer.toString(a)+" "+ Integer.toString(b)+" "+ Integer.toString(c);
-        return ret;
+        return a +" "+ b +" "+ c;
     }
 
     public static void main(String []args){
