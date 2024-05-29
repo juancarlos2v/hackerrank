@@ -6,23 +6,39 @@ import java.util.Scanner;
 
 public class ArrayListQuery {
     public static void main(String[] args) {
-        Scanner scan =new Scanner(System.in);
-        List<List<Integer>> numbers=new ArrayList<>();
+        Scanner scan = new Scanner(System.in);
+        List<List<Integer>> numbers = new ArrayList<>();
+        List<String> result = new ArrayList<>();
 
-        int n =scan.nextInt();
+        int test = scan.nextInt();
+
         scan.nextLine();
-        for (int i = 0; i <n ; i++) {
-            List<Integer> row=new ArrayList<>();
+        for (int i = 0; i < test; i++) {
             int size = scan.nextInt();
-            // Capturar el primer número antes de ingresar al bucle para los demás números
-            row.add(size);
-            // Leer los números restantes en la misma línea
+            ArrayList<Integer> row = new ArrayList<>(size);
             for (int j = 0; j < size; j++) {
                 int d = scan.nextInt();
                 row.add(d);
             }
             numbers.add(row);
         }
-        System.out.println(numbers);
+
+        //System.out.println("QUERY");
+        int testQuery= scan.nextInt();
+        for (int i = 0; i < testQuery; i++) {
+            int row= scan.nextInt();
+            int column= scan.nextInt();
+            try {
+                int r=numbers.get(row-1).get(column-1);
+                result.add(String.valueOf(r));
+            } catch (Exception e) {
+                result.add("ERROR!");
+            }
+        }
+
+        for (String out:result
+             ) {
+            System.out.println(out);
+        }
     }
 }
