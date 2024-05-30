@@ -3,7 +3,7 @@ package JavaPreparation;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Student{}
+//class Student{}
 class Rockstar{   }
 class Hacker{}
 
